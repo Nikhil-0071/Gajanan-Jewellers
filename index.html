@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width,initial-scale=0.6">
+    <title>Gajanan Jewellers</title>
+    <link rel="stylesheet" href="css/01style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo2.png" alt="Gajanan jeweller">
+        </div>
+        <div class="logo" id="logo2"> 
+            Gajanan Jewellers
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    
+    <div class="fullscreen-menu" id="menu">
+        <span class="close-menu" onclick="toggleMenu()">✖</span>
+
+        <!--Home-->
+        <h2 class="menu-heading"> Home </h2>
+        <div class="menu-single">
+            <a href="index.html" class="menu-box big"> Home</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Gold -->
+        <h2 class=" menu-heading"> Gold</h2>
+        <div class="menu-grid">
+            <a href="gold-ring.html" class="menu-box"> Ring</a>
+            <a href="gold-necklace.html" class="menu-box"> Necklace</a>
+            <a href="gold-earings.html" class="menu-box">Earrings</a>
+            <a href="gold-bangles.html" class="menu-box">Bangles</a>
+            <a href="gold-chain.html" class="menu-box"> Chain</a>
+            <a href="gold-mangalsutra.html" class="menu-box"> Mangalsutra</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Diamond-->
+        <h2 class="menu-heading"> Diamond </h2>
+        <div class="menu-single">
+            <a href="Diamond/01diamond.html" class="menu-box big"> Dimond Jewellery</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Silver-->
+        <h2 class="menu-heading"> Silver</h2>
+        <div class="menu-single">
+            <a href="silver/04silver.html" class="menu-box big"> Silver Jewellery</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!--kids-->
+        <h2 class="menu-heading"> Kids</h2>
+        <div class="menu-single">
+            <a href="kids/06kids.html" class="menu-box big"> Kids Jewellery</a>
+        </div>
+
+
+
+        <div class="menu-divider"></div>
+
+        <!-- Contact -->
+        <h2 class=" menu-heading"> Contact</h2>
+        <div class="menu-single">
+            <a href="07contact.html" class="menu-box big">Contact Us</a>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- SLIDER -->
+
+
+    <section class="slider">
+
+        <div class="slides-container">
+
+            <div class="slide">
+                <img src="image/banner/banner1.jpeg" class="slide-bg">
+                <div class="slide-text left">
+                    <h1>Gold Necklace Collection</h1>
+                    <p>Explore our 916 Hallmark Gold Jewellery</p>
+                    <a href="/gold-necklace.html" class="btn">Explore Now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="image/banner/banner2.jpeg" class="slide-bg">
+                <div class="slide-text right">
+                    <h1>Diamond Collection</h1>
+                    <p>Premium & Elegant Diamond Designs</p>
+                    <a href="Diamond/01diamond.html" class="btn">Explore Now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="image/banner/banner3.jpeg" class="slide-bg">
+                <div class="slide-text left">
+                    <h1>Silver  Jewellery</h1>
+                    <p>Make Your Special Day More Beautiful</p>
+                    <a href="silver/04silver.html" class="btn">Explore Now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="image/banner/banner4.jpeg" class="slide-bg">
+                <div class="slide-text right">
+                    <h1>Trusted Family Jeweller</h1>
+                    <p>Owned by Mr. Sureshbhai K Pala</p>
+                    <a href="07contact.html" class="btn">Contact Us</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+
+    </section>
+
+
+    <!-- COLLECTIONS -->
+
+    <section class="categories">
+
+        <h2 class="section-title">Our Jewellery Collections</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="image/gold.jpeg" onclick="openImage(this)">
+                <div class="category-info">
+                    <h3>Gold Collection</h3><br>
+                    <a href="gold-ring.html" class="btn">View Collection</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="image/diamond.jpeg" onclick="openImage(this)">
+                <div class="category-info">
+                    <h3>Diamond Collection</h3><br>
+                    <a href="Diamond/01diamond.html" class="btn">View Collection</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="image/silver.jpeg" onclick="openImage(this)">
+                <div class="category-info">
+                    <h3>Silver Collection</h3><br>
+                    <a href="silver/04silver.html" class="btn">View Collection</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="lightbox" onclick="closeImage()">
+
+            <span class="close-btn">✖</span>
+
+            <img id="lightbox-img">
+
+        </div>
+
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="introduction">
+
+        <div class="intro-container">
+
+            <h2 class="intro-title">Welcome to Gajanan Jewellers</h2>
+
+            <div class="gold-line"></div>
+
+            <p class="intro-text">
+                Gajanan Jewellers is a trusted name in fine jewellery offering beautifully crafted
+                gold, diamond and bridal collections. Our designs combine tradition with modern elegance.
+            </p>
+
+            <p class="intro-text">
+                Jewellery is more than an ornament — it is a symbol of love, celebration and family traditions.
+                Discover timeless pieces perfect for weddings and special occasions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR JEWELLERY -->
+
+
+    <section class="popular-jewellery">
+
+        <h2 class="section-title">Our Popular Jewellery</h2>
+
+        <div class="popular-container">
+
+            <div class="jewellery-card">
+                <img src="image/product/ring.jpeg" onclick="openImage(this)">
+                <div class="jewellery-name"> Ring</div>
+            </div>
+
+            <div class="jewellery-card">
+                <img src="image/product/nacklace.jpeg" onclick="openImage(this)">
+                <div class="jewellery-name">Necklace</div>
+            </div>
+
+            <div class="jewellery-card">
+                <img src="image/product/bangale.jpeg" onclick="openImage(this)">
+                <div class="jewellery-name">Bangles</div>
+            </div>
+
+            <div class="jewellery-card">
+                <img src="image/product/earings.jpeg" onclick="openImage(this)">
+                <div class="jewellery-name">Earrings</div>
+            </div>
+
+            <div class="jewellery-card">
+                <img src="image/product/mangalsutra.jpeg" onclick="openImage(this)">
+                <div class="jewellery-name">Mangalsutra</div>
+            </div>
+
+            <div class="jewellery-card">
+                <img src="image/product/chain.jpeg" onclick="openImage(this)">
+                <div class="jewellery-name">Gold Chain</div>
+            </div>
+
+
+        </div>
+
+        <div id="lightbox" onclick="closeImage()">
+
+            <span class="close-btn">✖</span>
+
+            <img id="lightbox-img">
+
+        </div>
+
+    </section>
+
+
+    <!-- TRUST SECTION -->
+
+    <section class="trust-section">
+
+        <h2 class="section-title">Why Choose Us</h2>
+
+        <div class="trust-container">
+
+            <div class="trust-box">
+                <i class="fas fa-gem"></i>
+                <h3>Hallmark Gold</h3>
+                <p>100% certified and pure gold jewellery.</p>
+            </div>
+
+            <div class="trust-box">
+                <i class="fas fa-certificate"></i>
+                <h3>Certified Diamonds</h3>
+                <p>Premium quality certified diamond jewellery.</p>
+            </div>
+
+            <div class="trust-box">
+                <i class="fas fa-users"></i>
+                <h3>Trusted Jeweller</h3>
+                <p>Serving families with trust for many years.</p>
+            </div>
+
+            <div class="trust-box">
+                <i class="fas fa-star"></i>
+                <h3>Latest Designs</h3>
+                <p>Beautiful and modern jewellery collections.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Gajanan Jewellers</h3>
+                <p>Trusted family jeweller offering beautiful gold and diamond jewellery.</p>
+                <p>Owner : Sureshbhai K Pala</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Gold</a></li>
+                    <li><a href="./Diamond/01diamond.html">Diamond</a></li>
+                    <li><a href="./silver/04silver.html">Silver</a></li>
+                    <!--- <li><a href="05bridal.html">Bridal</a></li> -->
+                    <li><a href="./kids/06kids.html">Kids</a></li>
+                    <li><a href="07contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📞 Phone : 9998129160</p>
+                <p>📍 Harsurpur Devliya, Amreli - Gujarat</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Gajanan Jewellers | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js?=2"></script>
+
+</body>
+
+</html
