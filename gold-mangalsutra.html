@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width,initial-scale=0.6">
+    <title>Gold Chain - Gajanan Jewellers</title>
+    <link rel="stylesheet" href="css/01style.css">
+</head>
+
+<body>
+
+     <header class="header">
+      <div class="logo">
+            <img src="logo2.png" alt="Gajanan jeweller">
+        </div>
+        <div class="logo" id="logo2"> 
+            Gajanan Jewellers
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div class="fullscreen-menu" id="menu">
+        <span class="close-menu" onclick="toggleMenu()">✖</span>
+
+        <!--Home-->
+        <h2 class="menu-heading"> Home </h2>
+        <div class="menu-single">
+            <a href="index.html" class="menu-box big"> Home</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Gold -->
+        <h2 class=" menu-heading"> Gold</h2>
+        <div class="menu-grid">
+            <a href="gold-ring.html" class="menu-box"> Ring</a>
+            <a href="gold-necklace.html" class="menu-box"> Necklace</a>
+            <a href="gold-earings.html" class="menu-box">Earrings</a>
+            <a href="gold-bangles.html" class="menu-box">Bangles</a>
+            <a href="gold-chain.html" class="menu-box"> Chain</a>
+            <a href="gold-mangalsutra.html" class="menu-box"> Mangalsutra</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Diamond-->
+        <h2 class="menu-heading"> Diamond </h2>
+        <div class="menu-single">
+            <a href="Diamond/01diamond.html" class="menu-box big"> Dimond Jewellery</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Silver-->
+        <h2 class="menu-heading"> Silver</h2>
+        <div class="menu-single">
+            <a href="silver/04silver.html" class="menu-box big"> Silver Jewellery</a>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!--kids-->
+        <h2 class="menu-heading"> Kids</h2>
+        <div class="menu-single">
+            <a href="kids/06kids.html" class="menu-box big"> Kids Jewellery</a>
+        </div>
+
+
+
+        <div class="menu-divider"></div>
+
+        <!-- Contact -->
+        <h2 class=" menu-heading"> Contact</h2>
+        <div class="menu-single">
+            <a href="07contact.html" class="menu-box big">Contact Us</a>
+        </div>
+
+
+    </div>
+
+
+
+    <section class="product-section">
+
+        <h2 class="section-title">Gold Chain Collection</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/01mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/02mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/03mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/04mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/05mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/06mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/07mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/08mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/09mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+
+            <div class="product-card">
+                <img src="product-img/mangalsutra/10mangalsutra.jpeg" onclick="openImage(this)">
+            </div>
+        </div>
+    </section>
+          <!-- LIGHTBOX -->
+
+     <!-- LIGHTBOX -->
+
+    <div id="lightbox">
+
+    <span class="close-btn" onclick="closeImage()">✖</span>
+
+    <span class="lightbox-prev" onclick="prevImage()">❮</span>
+
+    <img id="lightbox-img">
+
+    <span class="lightbox-next" onclick="nextImage()">❯</span>
+
+</div>
+
+        <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Gajanan Jewellers</h3>
+                <p>Trusted family jeweller offering beautiful gold and diamond jewellery.</p>
+                <p>Owner : Sureshbhai K Pala</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Gold</a></li>
+                    <li><a href="./Diamond/01diamond.html">Diamond</a></li>
+                    <li><a href="./silver/04silver.html">Silver</a></li>
+                   <!--- <li><a href="05bridal.html">Bridal</a></li> -->
+                    <li><a href="/kids/06kids.html">Kids</a></li>
+                    <li><a href="07contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📞 Phone : 9998129160</p>
+                <p>📍 Harsurpur Devliya, Amreli - Gujarat</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Gajanan Jewellers | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

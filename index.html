@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta name="Viewport" content="width=device-width,initial-scale=0.6">
     <title>Gajanan Jewellers</title>
+    <div class="menu-toggle">&#9776;</div>
     <link rel="stylesheet" href="css/01style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
+
         <div class="logo">
             <img src="logo2.png" alt="Gajanan jeweller">
         </div>
-        <div class="logo" id="logo2"> 
+        <div class="logo" id="logo2">
             Gajanan Jewellers
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
-    
+
     <div class="fullscreen-menu" id="menu">
         <span class="close-menu" onclick="toggleMenu()">✖</span>
 
@@ -78,10 +80,7 @@
 
 
     </div>
-
-
-
-
+    
     <!-- SLIDER -->
 
 
@@ -110,7 +109,7 @@
             <div class="slide">
                 <img src="image/banner/banner3.jpeg" class="slide-bg">
                 <div class="slide-text left">
-                    <h1>Silver  Jewellery</h1>
+                    <h1>Silver Jewellery</h1>
                     <p>Make Your Special Day More Beautiful</p>
                     <a href="silver/04silver.html" class="btn">Explore Now</a>
                 </div>
@@ -141,29 +140,29 @@
 
         <div class="category-container">
 
-            <div class="category-card">
-                <img src="image/gold.jpeg" onclick="openImage(this)">
+            <a href="gold-ring.html" class="category-card">
+                <img src="image/gold.jpeg">
                 <div class="category-info">
                     <h3>Gold Collection</h3><br>
-                    <a href="gold-ring.html" class="btn">View Collection</a>
+                    <span class="btn">View Collection</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="category-card">
-                <img src="image/diamond.jpeg" onclick="openImage(this)">
+            <a href="Diamond/01diamond.html" class="category-card">
+                <img src="image/diamond.jpeg">
                 <div class="category-info">
                     <h3>Diamond Collection</h3><br>
-                    <a href="Diamond/01diamond.html" class="btn">View Collection</a>
+                    <span class="btn">View Collection</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="category-card">
-                <img src="image/silver.jpeg" onclick="openImage(this)">
+            <a href="silver/04silver.html" class="category-card">
+                <img src="image/silver.jpeg">
                 <div class="category-info">
                     <h3>Silver Collection</h3><br>
-                    <a href="silver/04silver.html" class="btn">View Collection</a>
+                    <span class="btn">View Collection</span>
                 </div>
-            </div>
+            </a>
 
         </div>
         <div id="lightbox" onclick="closeImage()">
@@ -173,11 +172,9 @@
             <img id="lightbox-img">
 
         </div>
-
-
+        
     </section>
-
-
+    
     <!-- INTRODUCTION -->
 
     <section class="introduction">
